@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title %}{% endblock %}
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+  <nav>
+    <a href="{{url_for('index')}}">Inicio</a>
+    <a href="{{url_for('dado')}}">Dado</a>
+    <a href="{{url_for('fecha')}}">Fecha</a>
+    <a href="{{url_for('color')}}">Color</a>
+  </nav>
+  {% block titulo %}{% endblock %}
+  {% block contenido %}{% endblock %}
+</body>
+</html>

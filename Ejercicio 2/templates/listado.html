@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Ejercicio 2 - Listado</title>
+{% endblock %}
+{% block titulo %}
+<h1>Top 10 per capita</h1>
+{% endblock %}
+{% block contenido %}
+<ol>
+{% for i in range(10) %}
+  <li>Pais: {{listado[i][0]}}, Valor: {{listado[i][1]}}, Año: {{listado[i][2]}} </li>
+{% endfor %}
+</ol>
+{% endblock %}

@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+  font-family: Arial;
+}
+nav{
+  display:flex;
+  justify-content: space-around;
+  width:100%;
+  background-color: blue;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+nav a:hover{
+  background-color: white;
+  color: black;
+}

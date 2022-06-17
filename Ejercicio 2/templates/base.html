@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title %}{% endblock %}
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+  <nav>
+    <a href="{{url_for('index')}}">Inicio</a>
+    <a href="{{url_for('listado_top')}}">Top 10 Total</a>
+    <a href="{{url_for('listado_pais', pais = 'Argentina')}}">Top 10 por Pais</a>
+    <a href="{{url_for('listado')}}">Top 10 pcap</a>
+    <a href="{{url_for('ayuda')}}">Acerca De</a>
+  </nav>
+  {% block titulo %}{% endblock %}
+  {% block contenido %}{% endblock %}
+</body>
+</html>
